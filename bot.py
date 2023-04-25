@@ -51,7 +51,7 @@ def generate_image(prompt, seed=None, num_inference_steps=NUM_INFERENCE_STEPS, s
 
     pipe.to("cuda")
     print(prompt)
-    image = pipe(prompt, noise_seed=seed).images[0]
+    image = pipe(prompt).images[0]
 
 
 
